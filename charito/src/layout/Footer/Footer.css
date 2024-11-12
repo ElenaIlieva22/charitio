@@ -1,0 +1,5 @@
+/* remove the fixed height */
+footer {
+    height: 200px;
+    background-color: blue; 
+} 
