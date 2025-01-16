@@ -1,5 +1,17 @@
-*, *::after, *::before {
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100vh;
 }

@@ -1,0 +1,102 @@
+/* Navbar Container */
+.navbar {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  
+  /* Wrapper */
+  .navbar-wrapper {
+    max-width: 7xl;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* sm:px-6 */
+    padding-right: 1rem; /* sm:px-6 */
+  }
+  
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem; /* h-24 */
+  }
+  
+  /* Left Side - Logo */
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo-text {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: bold;
+    color: #1e3a8a; /* text-navy-800 */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: none; /* Hidden by default */
+  }
+  
+  .nav-links a {
+    color: #374151; /* text-gray-700 */
+    font-weight: 500; /* font-medium */
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #111827; /* text-gray-900 */
+  }
+  
+  @media (min-width: 768px) {
+    /* Show nav links on medium and larger screens */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+    }
+  }
+  
+  /* Right Side - Buttons */
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .donate-button {
+    background-color: #FF6842;
+    color: white;
+    padding-left: 1.75rem; /* px-7 */
+    padding-right: 1.75rem; /* px-7 */
+    padding-top: 0.75rem; /* py-3 */
+    padding-bottom: 0.75rem; /* py-3 */
+    border-radius: 0.75rem; /* rounded-lg */
+    font-weight: 600; /* font-semibold */
+    transition: background-color 0.3s;
+  }
+  
+  .donate-button:hover {
+    background-color: #f97316; /* hover:bg-orange-600 */
+  }
+  
+  .search-button {
+    padding: 0.75rem; /* p-3 */
+    color: #4b5563; /* text-gray-600 */
+    background-color: #f3f4f6; /* bg-gray-100 */
+    border-radius: 50%; /* rounded-full */
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    color: #111827; /* hover:text-gray-900 */
+    background-color: #e5e7eb; /* hover:bg-gray-200 */
+  }
+  
+  .search-icon {
+    width: 1.25rem; /* h-5 */
+    height: 1.25rem; /* w-5 */
+  }
+  
